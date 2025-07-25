@@ -61,7 +61,35 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				yoolax: {
+					DEFAULT: 'hsl(var(--yoolax-primary))',
+					secondary: 'hsl(var(--yoolax-secondary))',
+					accent: 'hsl(var(--yoolax-accent))'
+				},
+				galactic: {
+					DEFAULT: 'hsl(var(--galactic-primary))',
+					secondary: 'hsl(var(--galactic-secondary))',
+					accent: 'hsl(var(--galactic-accent))'
+				},
+				ghm: {
+					DEFAULT: 'hsl(var(--ghm-primary))',
+					secondary: 'hsl(var(--ghm-secondary))',
+					accent: 'hsl(var(--ghm-accent))'
 				}
+			},
+			backgroundImage: {
+				'gradient-dashboard': 'var(--gradient-dashboard)',
+				'gradient-yoolax': 'var(--gradient-yoolax)',
+				'gradient-galactic': 'var(--gradient-galactic)',
+				'gradient-ghm': 'var(--gradient-ghm)'
+			},
+			boxShadow: {
+				'card': 'var(--shadow-card)',
+				'hover': 'var(--shadow-hover)'
+			},
+			transitionTimingFunction: {
+				'bounce': 'cubic-bezier(0.68, -0.55, 0.265, 1.55)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

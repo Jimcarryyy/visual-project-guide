@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Project Dashboard Design System - Visual Learning Focused
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 0 0% 98%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -36,7 +36,34 @@ All colors MUST be HSL.
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Project-specific colors */
+    --yoolax-primary: 210 100% 50%;
+    --yoolax-secondary: 210 100% 95%;
+    --yoolax-accent: 210 100% 85%;
+    
+    --galactic-primary: 0 85% 60%;
+    --galactic-secondary: 0 85% 95%;
+    --galactic-accent: 0 85% 85%;
+    
+    --ghm-primary: 142 76% 36%;
+    --ghm-secondary: 142 76% 95%;
+    --ghm-accent: 142 76% 85%;
+
+    /* Gradients */
+    --gradient-dashboard: linear-gradient(135deg, hsl(var(--background)), hsl(220 15% 95%));
+    --gradient-yoolax: linear-gradient(135deg, hsl(var(--yoolax-secondary)), hsl(var(--yoolax-accent)));
+    --gradient-galactic: linear-gradient(135deg, hsl(var(--galactic-secondary)), hsl(var(--galactic-accent)));
+    --gradient-ghm: linear-gradient(135deg, hsl(var(--ghm-secondary)), hsl(var(--ghm-accent)));
+
+    /* Shadows */
+    --shadow-card: 0 4px 20px -2px hsl(var(--primary) / 0.1);
+    --shadow-hover: 0 8px 30px -4px hsl(var(--primary) / 0.15);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
